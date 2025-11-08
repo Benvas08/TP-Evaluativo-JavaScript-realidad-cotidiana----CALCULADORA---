@@ -1,5 +1,3 @@
----
-
 # 🧮 Calculadora Inteligente con Historial
 
 **Autor:** Vasques Perrone Benjamin Ezequiel
