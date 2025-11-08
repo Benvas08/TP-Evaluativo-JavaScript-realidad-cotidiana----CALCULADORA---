@@ -5,7 +5,6 @@
 **Autor:** Vasques Perrone Benjamin Ezequiel
 **Trabajo:** TP Integrador – JavaScript aplicado a una realidad cotidiana
 
----
 
 ## 📘 Descripción del programa
 
