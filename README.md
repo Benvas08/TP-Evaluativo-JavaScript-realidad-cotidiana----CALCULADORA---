@@ -1,6 +1,7 @@
 # 🧮 Calculadora Inteligente con Historial
 
 **Autor:** Vasques Perrone Benjamin Ezequiel
+
 **Trabajo:** TP Integrador – JavaScript aplicado a una realidad cotidiana
 
 
