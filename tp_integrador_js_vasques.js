@@ -10,6 +10,7 @@ const readline = require("readline-sync");
 // ---------- 2. VARIABLES Y TIPOS DE DATOS (Requisito: 4 tipos) ----------
 let operacionSeleccionada = "";     // string: Almacena el tipo de operacion
 let numero1 = 0;                    // number: Primer operando
+let numero2 = 0;                    // number: Segundo operando
 let continuar = true;               // boolean: Controla el bucle do...while
 let resultado = null;               // null: Almacena el resultado de la operacion (Inicialmente nulo)
 // Nota: 'undefined' podría ocurrir si no inicializamos una variable 'let' sin asignacion.
@@ -21,31 +22,30 @@ const calculadora = {
     // 2. ARRAY (Relacionado con la tematica)
     historial: [],
 
-    // Método con 'this' para calcular diferentes operaciones
+    // Método para realizar operaciones (usa switch y operador ternario)
     calcular: function (tipo, a, b) {
-    // La correccion: Usar casos separados o agrupar sin el operador ||
-    switch (tipo) {
+        switch (tipo) {
     // CONTROL DE FLUJO: switch (agrupando casos)
-        case "suma":
-        case "1":
-        case "+":
-            return a + b;
-        case "resta":
-        case "2":
-        case "-":
-            return a - b;
-        case "multiplicacion":
-        case "3":
-        case "*":
-            return a * b;
-        case "division":
-        case "4":
-        case "/":
+            case "suma":
+            case "1":
+            case "+":
+                return a + b;
+            case "resta":
+            case "2":
+            case "-":
+                return a - b;
+            case "multiplicacion":
+            case "3":
+            case "*":
+                return a * b;
+            case "division":
+            case "4":
+            case "/":
          // CONTROL DE FLUJO: Operador ternario (Requisito)
-            return b !== 0 ? a / b : "Error: Division por cero";
-        default:
-            return "Operacion no valida";
-    }
+                return b !== 0 ? a / b : "Error: Division por cero";
+            default:
+                return "Operacion no valida";
+        }
     },
 
     // Método para mostrar informacion general del objeto (usa 'this.marca')
@@ -121,7 +121,7 @@ do {
 
             // Validamos la entrada de numeros de manera mas robusta
             numero1 = Number(readline.question("\n >>  Ingrese el primer numero: "));
-            let numero2 = Number(readline.question(" >>  Ingrese el segundo numero: "));
+            numero2 = Number(readline.question(" >>  Ingrese el segundo numero: "));
 
             resultado = realizarOperacion(operacionSeleccionada, numero1, numero2);
             mostrarResultado(resultado);
