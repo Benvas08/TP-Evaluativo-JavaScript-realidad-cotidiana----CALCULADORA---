@@ -54,19 +54,25 @@ variables, objetos, funciones, arrays, control de flujo y estructuras repetitiva
 
 ## 🚀 Ejecución
 
-1. Instalar dependencias:
+1. Clonar peoyecto.
+
+```bash
+code<> (clonar repositorio)
+```
+
+2. Instalar readline-sync:
 
    ```bash
-   npm install readline-sync
+   npm install
    ```
 
-2. Ejecutar el programa:
+3. Ejecutar el programa:
 
    ```bash
    node tp_integrador_js_vasques.js
    ```
 
-3. Interactuar con el menú siguiendo las instrucciones en pantalla.
+4. Interactuar con el menú siguiendo las instrucciones en pantalla.
 
 ---
 
