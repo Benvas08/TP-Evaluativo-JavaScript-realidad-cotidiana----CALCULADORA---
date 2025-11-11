@@ -57,7 +57,12 @@ variables, objetos, funciones, arrays, control de flujo y estructuras repetitiva
 1. Clonar peoyecto.
 
 ```bash
-code<> (clonar repositorio)
+code (descargar epositorioio zip)
+```
+Ó
+- Abrir terminal de Visual Estudio y Abrir
+```bash
+git clone https://github.com/Benvas08/TP-Evaluativo-JavaScript-realidad-cotidiana----CALCULADORA---.git
 ```
 
 2. Instalar readline-sync:
