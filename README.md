@@ -65,7 +65,7 @@ code (descargar epositorioio zip)
 git clone https://github.com/Benvas08/TP-Evaluativo-JavaScript-realidad-cotidiana----CALCULADORA---.git
 ```
 
-2. Instalar readline-sync:
+2. Instalar los archivos necesarios en terminal:
 
    ```bash
    npm install
